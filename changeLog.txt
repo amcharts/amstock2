@@ -1,3 +1,17 @@
+2.8.3
+
+When panEventsEnabled was set to true, balloons over bullets were not shown.
+
+Text in balloons was not properly vertically aligned if verticalSpacing was set
+to some different than default value.
+
+Balloon wasn't positioned properly if chart was in a scrollable div.
+
+Init event wasn't fired by AmPieChart.
+
+Stock chart's scrollbar was showing more by one period than it was actually selected.
+
+
 2.8.2
 
 You can use time stamp values instead of Date objects for Stock chart since this

@@ -1,3 +1,19 @@
+2.7.9
+
+amChartsInputField class name added to date input fields in PeriodSelector.
+
+amChartsDataSetSelector class name added to data set selector's div.
+
+amChartsPeriodSelector class name added to period selector's div.
+
+FIX: if your minPeriod was set to milliseconds, in some cases events might not be visible.
+
+FIX: If you used to add/remove some graphs for several times, some graphs could disappear.
+
+FIX: balloon could be positioned in a wrong place in some specific cases with IE.
+
+Some other minor bugs fixed.
+
 2.7.8
 problem with Data set selector's position set to "bottom" fixed.
 

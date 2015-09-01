@@ -1,3 +1,45 @@
+2.9.0
+
+validateSize method added to AmStockChart. If you changed size of chart's div and want the
+chart to adjust, call this method.
+
+"init" event added to AmStockChart, it is fired when chart is initialized for the first time.
+In case you need this event to be fired after validateNow method, set chart.chartCreated to "false".
+
+AmCharts.clear method added. Call this method if you want completely to remove all charts from a page.
+
+Memory leak fixed.
+
+Animation was working only on the first panel of stock chart.
+
+Since this version, when setting zooming date-based chart, you have to set
+exact "to" date. For example, if you want the chart to display one day only,
+set from date as 2012,1,1 (first of February) and the to date as
+new Date(2012,1,2) or new Date(2012,1,1,23,59,59). Previously you could set the
+same date for start and end dates and the chart used to select one "minPeriod"
+automatically, however this caused a lot of problems for charts displaying
+monthly or yearly data.
+
+2.8.5
+
+above property added to Guide. If you set it to true, guides will be displayed above graphs.
+Some minor bugs fixed.
+
+2.8.4
+
+NEW FEATURE:
+you can set a customly created div element as a container of your legend. To do this,
+you should pass id or reference of the div in this method:
+
+chart.addLegend(legend, divID);
+
+FIXES:
+balloon could be wrongly positioned in marginTop style was added directly to <html> element.
+chart.animateAgain(); worked only if validateNow() method was called after.
+in some specific cases scrollbar could act icorrectly on IE8/IE7.
+if minPeriod was set to month and the chart was zoomed-in from outside, one month
+was added to the specified period.
+
 2.8.3
 
 When panEventsEnabled was set to true, balloons over bullets were not shown.

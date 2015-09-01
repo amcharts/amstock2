@@ -1,3 +1,60 @@
+2.8.2
+
+You can use time stamp values instead of Date objects for Stock chart since this
+version.
+
+AmStockChart.clear() method added. In case you want to destroy the chart, call
+this method.
+
+Step line's corners sometimes were not perfect (one extra pixel could be added
+in the end of horizontal line)
+
+You couldn't change panEventsEnabled of AmChart class after the chart was 
+initialized.
+
+You couldn't chane legend's position after the chart was initialized.
+
+Step line chart was not correctly filled if Value axis was of some stacked type.
+
+Some other minor bugs fixed.
+ 
+
+2.8.1
+
+hideXScrollbar and hideYScrollbar properties added to AmXYChart. This will
+allow you to show one scrollbar only.
+
+hideOutOfScopePeriods property added to PeriodSelector, with default
+value true. This will hide period buttons which periods are longer than data
+available.
+
+problem with periodSelector buttons fixed - several buttons could be marked
+as selected if a button's period was bigger than data available.
+
+2.8.0
+
+New features:
+you can pass dates as timestamps instead of date objects.
+
+ChartCursor.selectWithoutZooming property added which allows marking desired area
+with chart cursor without zooming-in.
+
+graph.fillToGraph property added. This allows creating band or range graphs.
+The area between graph and fillToGraph will be filled with a color if graph.fillAlphas
+is set to > 0 value. Works with "line" graph type only.
+
+Bug fixes:
+
+Blurry lines on all browsers fixed
+
+right/bottom grid line was hidden if marginRight/marginBottom were set to 0
+
+category balloon was shifted a bit since last version
+
+background image was incorrectly sized
+
+predefined button could be deselected after chart.validateNow() call
+
 2.7.10
 Problem with balloon position in IE10 fixed.
 

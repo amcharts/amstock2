@@ -1,5 +1,15 @@
+2.6.6
+some minor bugs fixed.
+
+2.6.5
+some minor bugs fixed.
+
+2.6.4
+compareGraphNumberFormatter property added to StockGraph.
+some minor bugs fixed. 
+
 2.6.3
-zoom-out button wasn't working on iPad (only since 2.6.0)
+some minor bugs fixed.
 
 2.6.2
 Bug with paneEventsEnabled and older firefox (< 4) fixed
